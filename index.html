@@ -4,23 +4,80 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>My AI Teaching Toolkit</title>
-  <p>Made by Mandeep Kaur</p>
-    <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css" />
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; background: #f9f9f9; color: #333; }
-    header, section { padding: 20px; max-width: 900px; margin: auto; background: #fff; margin-top: 20px; border-radius: 8px; }
-    header { background: #4a90e2; color: white; text-align: center; }
-    h2 { color: #4a90e2; }
-/*     .gallery img { max-width: 150px; margin: 10px; border-radius: 8px; } */
-    footer { text-align: center; padding: 20px; font-size: 0.9em; color: gray; }
-    iframe, embed { width: 100%; max-width: 800px; height: 400px; margin-top: 10px; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #f0f4f8;
+      color: #333;
+    }
+    header, section {
+      padding: 25px;
+      max-width: 900px;
+      margin: 20px auto;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    }
+    header {
+      background: #4a90e2;
+      color: white;
+      text-align: center;
+    }
+    header h1 {
+      margin-bottom: 10px;
+    }
+    header p.subtitle {
+      font-style: italic;
+      font-size: 1.1em;
+      margin-top: 0;
+    }
+    h2 {
+      color: #4a90e2;
+    }
+    a {
+      color: #1a73e8;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .gallery img {
+      width: 30%;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    iframe, embed, audio {
+      width: 100%;
+      max-width: 800px;
+      height: 400px;
+      margin-top: 10px;
+      border-radius: 8px;
+    }
+    audio {
+      height: 50px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: gray;
+    }
   </style>
 </head>
 <body>
 
 <header>
   <h1>🎓 My AI Teaching Toolkit</h1>
-  <p>An AI-Enhanced Digital Resource Hub for Educators</p>
+  <p class="subtitle">An AI-Enhanced Digital Resource Hub for Educators</p>
+  <p><strong>Made by Mandeep Kaur</strong></p>
 </header>
 
 <section id="flashcards">
@@ -33,16 +90,17 @@
   <h2>📝 Student Quiz</h2>
   <p>Click below to take the quiz:</p>
   <p><a href="https://quizizz.com/pro/join/quiz/67ecd862dbce3cfdcb82d274/start?studentShare=true" target="_blank">Take Quiz</a></p>
+</section>
+
 <section id="exit-ticket">
   <h2>📊 Exit Ticket Summary</h2>
   <p>Insights from student exit ticket responses:</p>
-  <div class="gallery">
+  <div class="gallery" style="display: flex; flex-wrap: wrap; gap: 10px;">
     <img src="exit-summary.png" alt="Exit Summary 1" />
     <img src="exit-summary2.png" alt="Exit Summary 2" />
     <img src="exit-summary3.png" alt="Exit Summary 3" />
   </div>
 </section>
-
 
 <section id="podcast">
   <h2>🎙️ Lesson Podcast</h2>
@@ -53,38 +111,34 @@
   </audio>
 </section>
 
-  <section id="gallery">
+<section id="gallery">
   <h2>🖼️ AI Image Gallery</h2>
-  <p>Explore AI-generated images related to Computers and Programing in C</p>
-    <p>These AI-generated images were created using Leonardo.ai to visually represent key programming concepts and computing history. The gallery features an image of an old computer to evoke the early days of computing, alongside visual metaphors for loops and conditional statements in C programming, aiding in conceptual understanding through visual storytelling.</p>
-  <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-    <img src="Old Computer.jpg" alt="AI Image 1" style="width: 30%; border-radius: 10px;">
-    <img src="Conditional Statements.jpg" alt="AI Image 2" style="width: 30%; border-radius: 10px;">
-    <img src="Loops.jpg" alt="AI Image 3" style="width: 30%; border-radius: 10px;">
+  <p>Explore AI-generated images related to Computers and Programming in C:</p>
+  <p>These images were created using Leonardo.ai and represent an old computer, loops, and conditional statements in C. Visual storytelling helps enhance understanding of technical concepts.</p>
+  <div class="gallery" style="display: flex; flex-wrap: wrap; gap: 10px;">
+    <img src="Old Computer.jpg" alt="Old Computer" />
+    <img src="Conditional Statements.jpg" alt="Conditional Statements" />
+    <img src="Loops.jpg" alt="Loops" />
   </div>
 </section>
 
 <section id="literature-mapping">
   <h2>📚 Literature Mapping Summary</h2>
-  <p>Literature Mapping via ResearchRabbit:</p>
-  <p>
-I have used ResearchRabbit,a and I worked on the subject of “AI- and ML-based Smart Waste Management” by producing two visual literature graphs(Shown in this file). Starting from Gupta (2019) as my starting paper, where AI-based waste solutions for cities are discussed, I was taken on a research path by ResearchRabbit revealing to me an elaborate network of co-referred works that constitute highly relevant articles such as Vicentini (2009) and Arebey (2011), wherein optimization and sensor technologies in managing waste are deliberated upon. The tool enabled me to easily find papers that extended or were based on my seed paper, and the process of discovery was intuitive and fun.</p>
+  <p>I used ResearchRabbit to explore the topic “AI- and ML-based Smart Waste Management.” Starting with Gupta (2019), I discovered papers like Vicentini (2009) and Arebey (2011) that discuss optimization and sensors for waste systems. This tool showed how different papers connect and helped me explore research in an easy, visual way.</p>
   <img src="litmap-graph.png.png" alt="Literature Map" />
   <img src="paperGraph_WtiD2M4FPx7NSRi1xQdMN.png" alt="Literature Map" />
 </section>
 
 <section id="reflection">
   <h2>✍️ Reflective Note</h2>
-  <p><i>“AI has transformed my way of teaching by making everything easier and more creative. I can now create lessons, quizzes, and images much faster than before. Tools like ChatGPT help me prepare questions and summaries in minutes. AI also makes learning more fun for students with interactive flashcards, visuals, and even podcasts. It saves me time and gives me new ideas to teach in a better way. I feel more confident and excited to try new things in class. AI has truly changed the way I teach and connect with my students. It made my content creation faster, my quizzes more interactive, and helped me explore new forms of student engagement.”</i></p>
+  <p><i>AI has transformed my way of teaching by making everything easier and more creative. I can now create lessons, quizzes, and images much faster than before. Tools like ChatGPT help me prepare questions and summaries in minutes. AI also makes learning more fun for students with interactive flashcards, visuals, and even podcasts. It saves me time and gives me new ideas to teach in a better way. I feel more confident and excited to try new things in class. AI has truly changed the way I teach and connect with my students. It made my content creation faster, my quizzes more interactive, and helped me explore new forms of student engagement.</i></p>
 </section>
 
-  <section id="chatbot">
+<section id="chatbot">
   <h2>🤖 AI Chatbot</h2>
-  <p>Ask me anything about loops, conditionals, or C programming basics!</p>
-  <p><a href="https://poe.com/App637S3DNJOV" target="_blank" style="font-weight: bold; color: #1a73e8;">Chat with the bot on Poe</a></p>
+  <p>Ask me anything about loops, conditionals, or C programming basics:</p>
+  <p><a href="https://poe.com/App637S3DNJOV" target="_blank">Chat with the bot on Poe</a></p>
 </section>
-
-
 
 <footer>
   <p>Made with ❤️ using AI tools | FDP Project</p>
